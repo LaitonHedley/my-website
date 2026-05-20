@@ -3,18 +3,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Laiton Hedley | Psychological Science Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-    </header>
-    <main>
-        <p>This is your homepage. Edit <code>index.html</code> to update your content!</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Your Name</p>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-name">Laiton Hedley</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#demos">Demos</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">PhD Researcher &middot; Psychological Science</p>
+            <h1 class="hero-name">Laiton Hedley</h1>
+            <p class="hero-institution">University of Newcastle</p>
+            <p class="hero-tagline">Understanding how people coordinate with each other &mdash; and with intelligent machines &mdash; in dynamic team environments.</p>
+            <div class="hero-ctas">
+                <a href="cv.pdf" class="btn btn-primary" download>Download CV</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo">
+                    <div class="photo-placeholder">Your photo here</div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I am a PhD researcher in Psychological Science at the University of Newcastle. I study how people coordinate with each other and with intelligent machines in dynamic team environments.</p>
+                    <p>My research combines experimental psychology, cognitive modelling, behavioural time series analysis, and interactive task design to better understand human and machine teamwork.</p>
+                    <p>I am currently seeking postdoctoral positions where I can push the boundaries of human&ndash;machine teaming research and contribute to a collaborative, rigorous research environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <section class="section section-alt" id="interests">
+        <div class="container">
+            <h2 class="section-title centered">Research Interests</h2>
+            <div class="card-grid">
+                <div class="interest-card">
+                    <span class="interest-icon">�</span>
+                    <h3>Human&ndash;Machine Teaming</h3>
+                    <p>Investigating how humans and AI systems collaborate in shared dynamic tasks, and what drives effective joint performance.</p>
+                </div>
+                <div class="interest-card">
+                    <span class="interest-icon">🧠</span>
+                    <h3>Team Coordination</h3>
+                    <p>Studying the cognitive and behavioural mechanisms that enable people to coordinate fluidly in multi-agent environments.</p>
+                </div>
+                <div class="interest-card">
+                    <span class="interest-icon">📈</span>
+                    <h3>Behavioural Time Series</h3>
+                    <p>Applying time series methods to capture the temporal structure of coordinated behaviour and joint action dynamics.</p>
+                </div>
+                <div class="interest-card">
+                    <span class="interest-icon">🔬</span>
+                    <h3>Cognitive Modelling</h3>
+                    <p>Building computational models to formalise theories of human performance and predict behaviour in complex team tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <ul class="pub-list">
+                <li class="pub-item pub-inpress">
+                    <span class="pub-year">Accepted</span>
+                    <div class="pub-details">
+                        <p class="pub-citation"><strong>Hedley, L.</strong>, Russel, L., Bennett, M. S., &amp; Eidels, A. (accepted). A Novel Simulation Benchmark for Team Performance: Benchmarking a Benchmark. <em>Chinese Journal of Psychology</em>.</p>
+                        <div class="pub-tags"><span class="tag">Accepted</span><span class="tag">Team Performance</span></div>
+                    </div>
+                </li>
+                <li class="pub-item pub-inpress">
+                    <span class="pub-year">Under Review</span>
+                    <div class="pub-details">
+                        <p class="pub-citation"><strong>Hedley, L.</strong>, Bennett, M. S., Russel, L., Love, J., Eidels, A., &amp; Brown, S. Division of Labour and Team Performance: Human&ndash;Human Teams compared to Hybrid Human&ndash;Machine Teams. (under review). <a href="https://doi.org/10.31234/osf.io/s32yc" target="_blank" rel="noopener">Preprint</a></p>
+                        <div class="pub-tags"><span class="tag">Under Review</span><span class="tag">Human&ndash;Machine Teams</span></div>
+                    </div>
+                </li>
+                <li class="pub-item pub-inpress">
+                    <span class="pub-year">In Prep</span>
+                    <div class="pub-details">
+                        <p class="pub-citation">Fitch, A. K., Bennett, M. S., <strong>Hedley, L.</strong>, &amp; Kvam, P. D. (in prep). Real-time cognitive modeling using simulation-inversion networks. <em>Manuscript under review at British Journal of Mathematical Psychology</em>.</p>
+                        <div class="pub-tags"><span class="tag">In Prep</span><span class="tag">Cognitive Modelling</span></div>
+                    </div>
+                </li>
+                <li class="pub-item">
+                    <span class="pub-year">2023</span>
+                    <div class="pub-details">
+                        <p class="pub-citation"><strong>Hedley, L. G.</strong>, Bennett, M. S., Love, J., Houpt, J., Brown, S., &amp; Eidels, A. (2023). The Relationship Between Teaming Behaviours and Joint Capacity of Hybrid Human&ndash;Machine Teams. <em>Proceedings of the Annual Meeting of the Cognitive Science Society, 45</em>. <a href="https://escholarship.org/uc/item/61b5c7gv" target="_blank" rel="noopener">Link</a></p>
+                        <div class="pub-tags"><span class="tag">Conference Paper</span><span class="tag">Human&ndash;Machine Teams</span></div>
+                    </div>
+                </li>
+                <li class="pub-item">
+                    <span class="pub-year">2022</span>
+                    <div class="pub-details">
+                        <p class="pub-citation">Bennett, M. S., <strong>Hedley, L.</strong>, Love, J., Houpt, J. W., Brown, S. D., &amp; Eidels, A. (2022). Human Performance in Competitive and Collaborative Human&ndash;Machine Teams. <em>Topics in Cognitive Science</em>. <a href="https://doi.org/10.1111/tops.12683" target="_blank" rel="noopener">DOI</a></p>
+                        <div class="pub-tags"><span class="tag">Journal Article</span><span class="tag">Human&ndash;Machine Teams</span></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="pub-profiles">
+                <a href="https://scholar.google.com/citations?user=I7Tf-8oAAAAJ&hl=en" class="btn btn-secondary" target="_blank" rel="noopener">View Google Scholar Profile</a>
+                <a href="https://orcid.org/0000-0003-1004-3744" class="btn btn-secondary" target="_blank" rel="noopener">View ORCID Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIMENT DEMOS -->
+    <section class="section section-alt" id="demos">
+        <div class="container">
+            <h2 class="section-title centered">Experiment Demos</h2>
+            <p class="section-subtitle centered">Interactive demonstrations of experimental paradigms used in my research.</p>
+            <div class="demo-single">
+                <div class="demo-card">
+                    <div class="demo-icon">🤝</div>
+                    <h3>Team Spirit</h3>
+                    <p>An interactive team coordination task used to study how humans and machines collaborate under dynamic conditions. Try the experiment yourself to experience the paradigm firsthand.</p>
+                    <a href="https://murrayserver.fly.dev/teamspirit/?b=1" class="btn btn-outline" target="_blank" rel="noopener">Launch Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date">2022 &ndash; Present</p>
+                        <h3>PhD, Psychological Science</h3>
+                        <p class="timeline-institution">University of Newcastle</p>
+                        <p>Thesis: <em>&ldquo;[Working title of your PhD thesis]&rdquo;</em></p>
+                        <p>Supervised by Prof. [Supervisor Name]</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date">2019 &ndash; 2022</p>
+                        <h3>BSc (Hons) Psychology</h3>
+                        <p class="timeline-institution">University of [Previous Institution]</p>
+                        <p>First Class Honours &middot; Dissertation: <em>&ldquo;[Dissertation title]&rdquo;</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & METHODS -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title centered">Skills &amp; Methods</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Statistical Software</h3>
+                    <div class="tag-group">
+                        <span class="tag">R</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">MATLAB</span>
+                        <span class="tag">JASP</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Research Methods</h3>
+                    <div class="tag-group">
+                        <span class="tag">Experimental Design</span>
+                        <span class="tag">Interactive Task Design</span>
+                        <span class="tag">Online Studies</span>
+                        <span class="tag">Time Series Analysis</span>
+                        <span class="tag">Eye-tracking</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Statistical Techniques</h3>
+                    <div class="tag-group">
+                        <span class="tag">Cognitive Modelling</span>
+                        <span class="tag">Mixed Models</span>
+                        <span class="tag">Bayesian Inference</span>
+                        <span class="tag">Recurrence Analysis</span>
+                        <span class="tag">Power Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools &amp; Platforms</h3>
+                    <div class="tag-group">
+                        <span class="tag">PsychoPy</span>
+                        <span class="tag">jsPsych</span>
+                        <span class="tag">Qualtrics</span>
+                        <span class="tag">OSF</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">LaTeX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TALKS & CONFERENCES -->
+    <section class="section" id="talks">
+        <div class="container">
+            <h2 class="section-title">Talks &amp; Conferences</h2>
+            <ul class="talks-list">
+                <li class="talk-item">
+                    <span class="talk-year">2025</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;Division of Labour and Team Performance: Human&ndash;Human Teams compared to Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Human-AI Complementarity Workshop (2025) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2025</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;Division of Labour and Team Performance: Human&ndash;Human Teams compared to Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Experimental Psychology Conference (EPC, 2025) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2025</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;Division of Labour and Team Performance: Human&ndash;Human Teams compared to Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Australian Mathematical Psychology Conference (AMPC, 2025) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2024</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;Division of Labour and Team Performance: Human&ndash;Human Teams compared to Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Performance and Expertise Research Centre Conference (PERCC, 2024) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2023</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;The Relationship Between Teaming Behaviours and Joint Capacity of Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Cognitive Science Society Conference (CogSci, 2023) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2023</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;The Relationship Between Teaming Behaviours and Team Performance of Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Performance and Expertise Research Centre Conference (PERCC, 2023) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2023</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;The Relationship Between Teaming Behaviours and Joint Capacity of Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Society of Australasian Social Psychology Conference (SASP, 2023) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2023</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;The Relationship Between Teaming Behaviours and Joint Capacity of Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Australian Mathematical Psychology Conference (AMPC, 2023) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+                <li class="talk-item">
+                    <span class="talk-year">2023</span>
+                    <div class="talk-details">
+                        <p class="talk-title">&ldquo;The Relationship Between Teaming Behaviours and Joint Capacity of Hybrid Human&ndash;Machine Teams&rdquo;</p>
+                        <p class="talk-event">Experimental Psychology Conference (EPC, 2023) &middot; <em>Oral Presentation</em></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+        <div class="container container-narrow">
+            <h2 class="section-title centered">Get in Touch</h2>
+            <p class="contact-intro centered">I&rsquo;m open to postdoctoral opportunities, research collaborations, and academic conversations. Feel free to reach out.</p>
+            <div class="contact-links">
+                <a href="mailto:laiton.hedley@newcastle.edu.au" class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span>laiton.hedley@newcastle.edu.au</span>
+                </a>
+                <a href="https://www.linkedin.com/in/laiton-hedley-07898023b/" class="contact-item" target="_blank" rel="noopener">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Laiton Hedley &middot; Built with care</p>
     </footer>
+
+    <script>
+        // Mobile nav toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!expanded));
+            navLinks.classList.toggle('open');
+        });
+        // Close nav on link click (mobile)
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+
 </body>
 </html>
