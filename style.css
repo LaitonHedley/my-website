@@ -281,7 +281,26 @@ img { max-width: 100%; display: block; }
     font-style: italic;
 }
 
+.headshot {
+    width: 100%;
+    border-radius: var(--radius);
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
+    box-shadow: var(--shadow);
+}
+
 .about-text h2 { margin-bottom: 2.5rem; }
+
+.research-statement {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--accent-dark);
+    border-left: 3px solid var(--accent);
+    padding-left: 1rem;
+    margin-bottom: 1.25rem;
+}
+
 .about-text p { margin-bottom: 1rem; color: var(--text-mid); }
 .about-text p:last-child { margin-bottom: 0; }
 
